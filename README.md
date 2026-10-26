@@ -63,5 +63,15 @@ The Kali Linux terminal was used to inspect the network interfaces and IP addres
 
 The output showed that the network interface initially had the IP address 10.0.0.3/24.
 #
+# Step 5. Configure a Static IP Address
+The graphical network connection editor was opened using: \
 
+` nm-connection-editor `
+
+The Wired connection 1 connection was edited. Under IPv4 Settings, the method was changed to Manual, and the following values were entered: \
+- Address: 10.0.0.2
+- Netmask: 24
+- Gateway: 10.0.0.1
+- DNS server: 8.8.8.8
+The configuration was saved successfully. 
 
