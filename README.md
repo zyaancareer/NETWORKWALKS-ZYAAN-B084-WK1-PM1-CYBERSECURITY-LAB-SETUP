@@ -54,7 +54,14 @@ Oracle VirtualBox was already installed on the host computer. the existing insta
 Kali Linux was already installed in VirtualBox. The virtual machine was used for the lab, so a new installation was not required. the virtual machine was started to begin configuring the network.
 #
 # Step 3. Configure the NAT NEetwork
-A NAT Network was configured in VirtualBox with the IPv4 subnet 10.0.0.0/24
+A NAT Network was configured in VirtualBox with the IPv4 subnet 10.0.0.0/24. DHCP was initially enabled to allow the virtual machine to obtain an IP address automatically.
+#
+# Step 4. Check the Initial Network Configuration
+The Kali Linux terminal was used to inspect the network interfaces and IP addresses. The following command was executed: \
 
+` ip a `
+
+The output showed that the network interface initially had the IP address 10.0.0.3/24.
+#
 
 
