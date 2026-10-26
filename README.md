@@ -49,7 +49,12 @@ This lab can be used for:
 # 🪜 Lab Setup Procedure
 # Step 1. Prepare the Virtualisation Environment
 Oracle VirtualBox was already installed on the host computer. the existing installation was used to manage the virtual machine for this lab.
-
+#
+# Step 2. Prepare the Kali Linux Virtual Machine
+Kali Linux was already installed in VirtualBox. The virtual machine was used for the lab, so a new installation was not required. the virtual machine was started to begin configuring the network.
+#
+# Step 3. Configure the NAT NEetwork
+A NAT Network was configured in VirtualBox with the IPv4 subnet 10.0.0.0/24
 
 
 
