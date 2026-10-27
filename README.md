@@ -30,7 +30,7 @@ This lab can be used for:
 #
 
 # 🏗️ Lab Architechture
-(<img width="1152" height="527" alt="Lab_Architechture" src="https://github.com/user-attachments/assets/ed555e24-7452-43dc-8b4a-c231d1571cf9" />)
+<img width="1152" height="527" alt="Lab_Architechture" src="https://github.com/user-attachments/assets/ed555e24-7452-43dc-8b4a-c231d1571cf9" />
 
 
 # ⚙️ Lab Configuration
@@ -57,6 +57,8 @@ Kali Linux was already installed in VirtualBox. The virtual machine was used for
 #
 # Step 3. Configure the NAT NEetwork
 A NAT Network was configured in VirtualBox with the IPv4 subnet 10.0.0.0/24. DHCP was initially enabled to allow the virtual machine to obtain an IP address automatically.
+(<img width="1765" height="944" alt="network settings" src="https://github.com/user-attachments/assets/2887ed4e-43f1-413d-8843-7560b52420bb" />
+)
 #
 # Step 4. Check the Initial Network Configuration
 The Kali Linux terminal was used to inspect the network interfaces and IP addresses. The following command was executed: 
