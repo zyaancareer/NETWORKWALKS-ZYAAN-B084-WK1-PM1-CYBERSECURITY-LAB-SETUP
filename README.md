@@ -1,11 +1,11 @@
 # Cybersecurity Kali Linux Lab Setup
 This project involves setting up a Kali Linux virtual machine using Oracle VirtualBox to create a basic cybersecurity lab environment.
 
-The objective id to configure a virtual network, assign Kali Linux a static IPv4 address, and provide internet access. Additional requirements include enabling clipboard sharing, drag-and-drop, and a shared folder between the Windows host and Kali Linux.
+The objective is to configure a virtual network, assign Kali Linux a static IPv4 address, and provide internet access. Additional requirements include enabling clipboard sharing, drag-and-drop, and a shared folder between the Windows host and Kali Linux.
 #
 
 # 🎯 Objectives
-The main objectives of this project are to:
+The main objectives of this project is to:
 - Install and configure VirtualBox.
 - Install/import Kali Linux as a virtual machine.
 - Create a private NAT Network for the cybersecurity lab.
@@ -49,10 +49,10 @@ This lab can be used for:
 
 # 🪜 Lab Setup Procedure
 # Step 1. Prepare the Virtualisation Environment
-Oracle VirtualBox was already installed on the host computer. the existing installation was used to manage the virtual machine for this lab.
+Oracle VirtualBox was already installed on the host computer. The existing installation was used to manage the virtual machine for this lab.
 #
 # Step 2. Prepare the Kali Linux Virtual Machine
-Kali Linux was already installed in VirtualBox. The virtual machine was used for the lab, so a new installation was not required. the virtual machine was started to begin configuring the network.
+Kali Linux was already installed in VirtualBox. The virtual machine was used for the lab, so a new installation was not required. The virtual machine was started to begin configuring the network.
 #
 # Step 3. Configure the NAT Network
 A NAT Network was configured in VirtualBox with the IPv4 subnet 10.0.0.0/24. 
@@ -73,7 +73,7 @@ The graphical network connection editor was opened using:
 
 ` nm-connection-editor `
 
-The Wired connection 1 connection was edited. Under IPv4 Settings, the method was changed to Manual, and the following values were entered: 
+The Wired connection 1 connection was edited. Under IPv4 settings, the method was changed to Manual, and the following values were entered: 
 - Address: 10.0.0.2
 - Netmask: 24
 - Gateway: 10.0.0.1
@@ -112,8 +112,9 @@ The results of this test, along with the internet connectivity test, will be doc
 ## Problem 1: Error when changing IPv4 to Manual
 When the IPv4 method was changed from Automatic to Manual, the network editor displayed the following error:
 `"ipv4.method: method 'manual' requires at least an address or a route" `
-Cause: The manual configuration initially did not contain an IP address or a route. /
-Solution: An address entry was added with the required IP address, netmask, and gateway. / The DNS server was also configured , and the connection was saved successfully. 
+Cause: The manual configuration initially did not contain an IP address or a route. 
+Solution: An address entry was added with the required IP address, netmask, and gateway.  
+The DNS server was also configured , and the connection was saved successfully. 
 
 ## Problem 2: The IP address did not change immediately
 After saving the manual configuration Kali Linux initially continued to display the previous IP address.
@@ -127,8 +128,8 @@ I also learnt:
 - The difference between DHCP and static IP addressing.
 - How IP addresses and subnet masks identify devices and networks.
 - The purpose of a default gateway and a DNS server.
-- How to inspect network interfaces using "ip a".
-- How to manage network connections using "nmcli".
+- How to inspect network interfaces using `ip a`.
+- How to manage network connections using `nmcli`.
 - How to troubleshoot network configuration errors.
 - Why connectivity tests are important when verifying a network setup.
 
@@ -152,10 +153,10 @@ The following tools and resources were used or referenced during the lab:
 - Kali Linux: Linux distribution designed for cybersecurity and penetration-testing activities.
 - NetworkManager: Used to configure and manage the network connection.
 - Terminal: Used to execute network configuration and verification commands.
-- "ip a": Used to inspect network interfaces and IP addresses.
-- "nmcli": Used to manage the network connection.
-- "ping": Used to test network connectivity.
-- Google Public DNS: "8.8.8.8".
+- `ip a`: Used to inspect network interfaces and IP addresses.
+- `nmcli`: Used to manage the network connection.
+- `ping`: Used to test network connectivity.
+- Google Public DNS: `8.8.8.8`.
 #
 # 👤 Author
 
