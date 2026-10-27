@@ -30,6 +30,8 @@ This lab can be used for:
 #
 
 # 🏗️ Lab Architechture
+<img width="1152" height="527" alt="Lab_Architechture" src="https://github.com/user-attachments/assets/ed555e24-7452-43dc-8b4a-c231d1571cf9" />
+
 
 # ⚙️ Lab Configuration
 
@@ -57,21 +59,55 @@ Kali Linux was already installed in VirtualBox. The virtual machine was used for
 A NAT Network was configured in VirtualBox with the IPv4 subnet 10.0.0.0/24. DHCP was initially enabled to allow the virtual machine to obtain an IP address automatically.
 #
 # Step 4. Check the Initial Network Configuration
-The Kali Linux terminal was used to inspect the network interfaces and IP addresses. The following command was executed: \
+The Kali Linux terminal was used to inspect the network interfaces and IP addresses. The following command was executed: 
 
 ` ip a `
 
 The output showed that the network interface initially had the IP address 10.0.0.3/24.
 #
 # Step 5. Configure a Static IP Address
-The graphical network connection editor was opened using: \
+The graphical network connection editor was opened using: 
 
 ` nm-connection-editor `
 
-The Wired connection 1 connection was edited. Under IPv4 Settings, the method was changed to Manual, and the following values were entered: \
+The Wired connection 1 connection was edited. Under IPv4 Settings, the method was changed to Manual, and the following values were entered: 
 - Address: 10.0.0.2
 - Netmask: 24
 - Gateway: 10.0.0.1
 - DNS server: 8.8.8.8
-The configuration was saved successfully. 
+The configuration was saved successfully.
+#
+# Step 6. Reactivate the Network Connection
+The saved network connection was restarted using the following commands: 
+``` 
+nmcli connection down "Wired connection 1" 
+nmcli connection up "Wired connection 1"
+```
+The `ip a` command was then used to check the network interface and confirm that the static IP address had been applied. 
+#
+# Step 7. Verify Network Connectivity
+The gateway connectivity test was inherited using:
+` ping -c 4 10.0.0.1 `
+The results of this test, along with the internet connectivity test, will be documented after verification.
+#
+# 🔍 Lab Verification
+| Test | Purpose | Result |
+| --- | --- | --- |
+| `ip a` | Check the assigned IP address | Static IP Configuration applied | 
+| `ping -c 4 10.0.0.1` | Test communication with the gateway | Awaiting confirmation of the output
+| `ping -c 4 8.8.8.8` | Test external IP connectivity | Not yet verified  |
+| `ping -c 4 google.com` | Test DNS resolution and connectivity | Not yet verified |
+#
+# 🐞 Problems Encountered and Solutions
+## Problem 1: Error when changing IPv4 to Manual
+When the IPv4 method was changed from Automatic to Manual, the network editor displayed the following error:
+`"ipv4.method: method 'manual' requires at least an address or a route" `
+Cause: The manual configuration initially did not contain an IP address or a route.
+Solution: An address entry was added with the required IP address, netmask, and gateway. The DNS server was also configured , and the connection was saved successfully. 
 
+## Problem 2: The IP address did not change immediately
+After saving the manual configuration Kali Linux initially continued to display the previous IP address.
+Solution: The network connection was deactivated and reactivated using `nmcli`. The `ip a` command was then used to check the updated configuration.
+#
+# 💡What I Learnt
+Through this lab, I learnt how to configure a virtual network and assign a static IP address to a Kali Linux virtual machine.
