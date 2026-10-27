@@ -153,4 +153,16 @@ Name: Zyaan Makda
 
 Role: Cybersecurity
 
-LinkdIn
+LinkedIn: https://linkedin.com/in/zyaan-career/
+#
+#  Project Information
+
+Project Title: Kali Linux Virtual Cybersecurity Lab Setup
+
+Project Type: Practical Cybersecurity and Networking Lab
+
+Environment: VirtualBox with Kali Linux
+
+Objective: To configure a virtual cybersecurity environment, assign a static IP address, and verify network connectivity.
+
+Status: Static IP configuration saved and applied. Final connectivity verification is pending.
