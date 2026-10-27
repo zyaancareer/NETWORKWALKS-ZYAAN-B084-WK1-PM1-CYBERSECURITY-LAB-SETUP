@@ -161,7 +161,7 @@ The following tools and resources were used or referenced during the lab:
 
 Name: Zyaan Makda
 
-Role: Cybersecurity
+Role: IT Database Development Graduate
 
 LinkedIn: https://linkedin.com/in/zyaan-career/
 #
