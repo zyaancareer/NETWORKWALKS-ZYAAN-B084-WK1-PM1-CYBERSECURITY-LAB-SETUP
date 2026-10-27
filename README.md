@@ -76,7 +76,7 @@ The Wired connection 1 connection was edited. Under IPv4 Settings, the method wa
 - Gateway: 10.0.0.1
 - DNS server: 8.8.8.8
 The configuration was saved successfully.
-<img width="867" height="761" alt="Screenshot 2026-10-26 141441" src="https://github.com/user-attachments/assets/e0a1189b-1bed-414c-bcce-b711ae81fb14" />
+(<img width="865" height="760" alt="configure_kali_network" src="https://github.com/user-attachments/assets/4de513bc-a681-4b45-9b38-12c9cba6fc9b" />)
 #
 # Step 6. Reactivate the Network Connection
 The saved network connection was restarted using the following commands: 
