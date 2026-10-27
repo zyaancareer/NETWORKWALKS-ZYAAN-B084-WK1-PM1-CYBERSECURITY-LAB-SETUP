@@ -35,17 +35,17 @@ This lab can be used for:
 
 # ⚙️ Lab Configuration
 
-| Header 1 | Header 2 |
+| Configuration | Details |
 | --- | --- |
-| Virtualisation Software | Oracle VirtualBox|
+| 🖥️ Virtualisation Software | Oracle VirtualBox|
 | 🧠 Operating System | Kali Linux |
 | 🌐 Network Type | NAT Network |
 | 📡 Network Subset | 10.0.0.0/24 |
 | 🐧 Kali IP Address | 10.0.0.2 |
-| Subnet Mask | 255.255.255.0 |
+| 🔢 Subnet Mask | 255.255.255.0 |
 | 🚪Default Gateway | 10.0.0.1 |
 | 🌍 DNS Server | 8.8.8.8 |
-| DHCP | Enabled in the VirtualBox NAT Network |
+| 🔁 DHCP | Enabled in the VirtualBox NAT Network |
 #
 
 # 🪜 Lab Setup Procedure
@@ -76,6 +76,7 @@ The Wired connection 1 connection was edited. Under IPv4 Settings, the method wa
 - Gateway: 10.0.0.1
 - DNS server: 8.8.8.8
 The configuration was saved successfully.
+<img width="867" height="761" alt="Screenshot 2026-10-26 141441" src="https://github.com/user-attachments/assets/e0a1189b-1bed-414c-bcce-b711ae81fb14" />
 #
 # Step 6. Reactivate the Network Connection
 The saved network connection was restarted using the following commands: 
