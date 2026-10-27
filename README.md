@@ -111,3 +111,38 @@ Solution: The network connection was deactivated and reactivated using `nmcli`. 
 #
 # 💡What I Learnt
 Through this lab, I learnt how to configure a virtual network and assign a static IP address to a Kali Linux virtual machine.
+
+I also learnt:
+
+- The difference between DHCP and static IP addressing.
+- How IP addresses and subnet masks identify devices and networks.
+- The purpose of a default gateway and a DNS server.
+- How to inspect network interfaces using "ip a".
+- How to manage network connections using "nmcli".
+- How to troubleshoot network configuration errors.
+- Why connectivity tests are important when verifying a network setup.
+
+The lab also demonstrated the importance of understanding network configuration rather than relying only on default settings.
+#
+# 🔒 Security and Ethical Use
+
+Kali Linux is used for cybersecurity education, authorised security testing, and learning about network security.
+
+All testing in this lab should be conducted within the controlled virtual environment or on systems for which permission has been granted.
+
+The tools and techniques used in this lab must not be used to access, scan, or attack systems or networks without authorisation.
+
+The purpose of this lab is to develop practical networking and cybersecurity skills responsibly.
+#
+# 🔗 Tools and Resources
+
+The following tools and resources were used or referenced during the lab:
+
+- Oracle VirtualBox: Virtualisation software used to run the Kali Linux virtual machine.
+- Kali Linux: Linux distribution designed for cybersecurity and penetration-testing activities.
+- NetworkManager: Used to configure and manage the network connection.
+- Terminal: Used to execute network configuration and verification commands.
+- "ip a": Used to inspect network interfaces and IP addresses.
+- "nmcli": Used to manage the network connection.
+- "ping": Used to test network connectivity.
+- Google Public DNS: "8.8.8.8".
