@@ -94,6 +94,9 @@ The `ip a` command was then used to check the network interface and confirm that
 # Step 7. Verify Network Connectivity
 The gateway connectivity test was inherited using:
 ` ping -c 4 10.0.0.1 `
+
+<img width="866" height="756" alt="3-screenshot-network-connectivity" src="https://github.com/user-attachments/assets/94ae6791-8297-45dc-b9c5-014ee3fb63a9" />
+
 The results of this test, along with the internet connectivity test, will be documented after verification.
 
 #
@@ -162,7 +165,7 @@ Role: Cybersecurity
 
 LinkedIn: https://linkedin.com/in/zyaan-career/
 #
-#  Project Information
+# 📌 Project Information
 
 Project Title: Kali Linux Virtual Cybersecurity Lab Setup
 
