@@ -30,7 +30,7 @@ This lab can be used for:
 #
 
 # 🏗️ Lab Architechture
-<img width="1152" height="527" alt="Lab_Architechture" src="https://github.com/user-attachments/assets/ed555e24-7452-43dc-8b4a-c231d1571cf9" />
+(<img width="1152" height="527" alt="Lab_Architechture" src="https://github.com/user-attachments/assets/ed555e24-7452-43dc-8b4a-c231d1571cf9" />)
 
 
 # ⚙️ Lab Configuration
@@ -90,6 +90,7 @@ The `ip a` command was then used to check the network interface and confirm that
 The gateway connectivity test was inherited using:
 ` ping -c 4 10.0.0.1 `
 The results of this test, along with the internet connectivity test, will be documented after verification.
+
 #
 # 🔍 Lab Verification
 | Test | Purpose | Result |
