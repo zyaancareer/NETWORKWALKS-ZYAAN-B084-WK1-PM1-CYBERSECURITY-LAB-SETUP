@@ -102,8 +102,8 @@ The results of this test, along with the internet connectivity test, will be doc
 ## Problem 1: Error when changing IPv4 to Manual
 When the IPv4 method was changed from Automatic to Manual, the network editor displayed the following error:
 `"ipv4.method: method 'manual' requires at least an address or a route" `
-Cause: The manual configuration initially did not contain an IP address or a route.
-Solution: An address entry was added with the required IP address, netmask, and gateway. The DNS server was also configured , and the connection was saved successfully. 
+Cause: The manual configuration initially did not contain an IP address or a route. /
+Solution: An address entry was added with the required IP address, netmask, and gateway. / The DNS server was also configured , and the connection was saved successfully. 
 
 ## Problem 2: The IP address did not change immediately
 After saving the manual configuration Kali Linux initially continued to display the previous IP address.
@@ -146,3 +146,11 @@ The following tools and resources were used or referenced during the lab:
 - "nmcli": Used to manage the network connection.
 - "ping": Used to test network connectivity.
 - Google Public DNS: "8.8.8.8".
+#
+# 👤 Author
+
+Name: Zyaan Makda
+
+Role: Cybersecurity
+
+LinkdIn
