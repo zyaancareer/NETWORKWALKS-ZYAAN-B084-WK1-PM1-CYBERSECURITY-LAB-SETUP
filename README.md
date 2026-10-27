@@ -15,7 +15,7 @@ The main objectives of this project are to:
 - Take a clean VM snapshot for recovery.
 - Document the complete setup process.
 - Prepare the environment for future cybersecurity projects.
-
+#
 # 🛡️ Purpose of the Lab
 The purpose of this lab is to create a virtual environment for learning and practicing cybersecurity and networking.
 
@@ -31,7 +31,6 @@ This lab can be used for:
 
 # 🏗️ Lab Architechture
 <img width="1152" height="527" alt="Lab_Architechture" src="https://github.com/user-attachments/assets/ed555e24-7452-43dc-8b4a-c231d1571cf9" />
-
 
 # ⚙️ Lab Configuration
 
@@ -55,10 +54,12 @@ Oracle VirtualBox was already installed on the host computer. the existing insta
 # Step 2. Prepare the Kali Linux Virtual Machine
 Kali Linux was already installed in VirtualBox. The virtual machine was used for the lab, so a new installation was not required. the virtual machine was started to begin configuring the network.
 #
-# Step 3. Configure the NAT NEetwork
-A NAT Network was configured in VirtualBox with the IPv4 subnet 10.0.0.0/24. DHCP was initially enabled to allow the virtual machine to obtain an IP address automatically.
-(<img width="1765" height="944" alt="network settings" src="https://github.com/user-attachments/assets/2887ed4e-43f1-413d-8843-7560b52420bb" />
-)
+# Step 3. Configure the NAT Network
+A NAT Network was configured in VirtualBox with the IPv4 subnet 10.0.0.0/24. 
+
+<img width="1765" height="944" alt="network settings" src="https://github.com/user-attachments/assets/2887ed4e-43f1-413d-8843-7560b52420bb" />
+
+DHCP was initially enabled to allow the virtual machine to obtain an IP address automatically.
 #
 # Step 4. Check the Initial Network Configuration
 The Kali Linux terminal was used to inspect the network interfaces and IP addresses. The following command was executed: 
@@ -78,7 +79,9 @@ The Wired connection 1 connection was edited. Under IPv4 Settings, the method wa
 - Gateway: 10.0.0.1
 - DNS server: 8.8.8.8
 The configuration was saved successfully.
-(<img width="865" height="760" alt="configure_kali_network" src="https://github.com/user-attachments/assets/4de513bc-a681-4b45-9b38-12c9cba6fc9b" />)
+
+<img width="865" height="760" alt="configure_kali_network" src="https://github.com/user-attachments/assets/4de513bc-a681-4b45-9b38-12c9cba6fc9b" />
+
 #
 # Step 6. Reactivate the Network Connection
 The saved network connection was restarted using the following commands: 
